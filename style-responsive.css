@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .h1 {
+      color:white;
+  }
+
+  .menu {
+    float: left;
+    width: 20%;
+  }
+  .menuitem {
+    padding: 8px;
+    margin-top: 7px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+  .menuitemP {
+    padding: 8px;
+    margin-top: 7px;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: pink;
+    color:white;
+  }
+
+  .column {
+    float: left;
+    width: 19%;
+    padding: 5px;
+  }
+  .row::after {
+    content: "";
+    clear:both;
+    display: table;
+  }
+  
+  .relative {
+    position:relative;
+    background-color:teal;
+    font-size: 30px;
+    bottom:18px;
+    color:white;
+    width: 220px;
+    text-align:center;
+  }
+  .right {
+    background-color: lightblue;
+    float: left;
+    width: 33%;
+    padding: 10px 15px;
+    margin-top: 7px;
+  }
+
+  .container-bottom {
+    margin-left:21%
+  }
+  
+  @media only screen and (max-width:980px, 768px, 640px) {
+    /* For tablets: */
+    .container {
+      width: 80%;
+      padding: 0;
+    }
+    .column {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:980px, 768px, 640px) {
+    /* For mobile phones: */
+    .menu, .container, .column {
+      width: 100%;
+    }
+  }
