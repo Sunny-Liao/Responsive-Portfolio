@@ -56,19 +56,50 @@
     margin-left:21%
   }
   
-  @media only screen and (max-width:980px, 768px, 640px) {
-    /* For tablets: */
-    .container {
-      width: 80%;
+  @media only screen and (max-width:980px) {
+    .container, .container.bottom {
+      width: 100%;
       padding: 0;
     }
     .column {
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width:980px) {
+    .menu, .container, .column, .container.bottom {
       width: 100%;
     }
   }
-  @media only screen and (max-width:980px, 768px, 640px) {
-    /* For mobile phones: */
-    .menu, .container, .column {
+
+  @media only screen and (max-width:768px) {
+    .container, .container.bottom {
+      width: 100%;
+      padding: 0;
+    }
+    .column {
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width:768px) {
+    .menu, .container, .column, .container.bottom {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width:640px) {
+    .container, .container.bottom {
+      width: 100%;
+      padding: 0;
+    }
+    .column {
+      width: 80%;
+    }
+    .h1 {
+      position: static;
+    }
+  }
+  @media only screen and (max-width:640px) {
+    .menu, .container, .column, .container.bottom {
       width: 100%;
     }
   }
